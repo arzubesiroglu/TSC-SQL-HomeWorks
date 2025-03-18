@@ -66,9 +66,22 @@ FROM Employees;
 
 SELECT *
 FROM Employees
+WHERE DepartmentID = 1;
+
+SELECT *
+FROM Employees
+WHERE DepartmentID = 2;
+
+SELECT *
+FROM Employees
 WHERE DepartmentID = 3;
 
---Açıklama: Bu sorgu, WHERE komutunu kullanarak sadece Finance departmanında çalışan çalışanları getirir.
+--Açıklama: 
+--İlk sorgu, WHERE komutunu kullanarak sadece IT departmanında çalışan çalışanları getirir.
+--Burada DepartmentID = 1 ile IT departmanının ID'sine göre filtreleme yapılır.
+--İkinci sorgu, WHERE komutunu kullanarak sadece HR departmanında çalışan çalışanları getirir.
+--Burada DepartmentID = 2 ile HR departmanının ID'sine göre filtreleme yapılır.
+--Üçüncü sorgu, WHERE komutunu kullanarak sadece Finance departmanında çalışan çalışanları getirir.
 --Burada DepartmentID = 3 ile Finance departmanının ID'sine göre filtreleme yapılır.
 
 ------------------------------------------------------------------------------------------------------------
