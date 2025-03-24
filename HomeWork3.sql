@@ -15817,14 +15817,16 @@ INSERT INTO "playlisttrack" ("playlist_id", "track_id") VALUES (18, 597);
 --Kullanılacak Tablo:
 --invoice
 
+SELECT * FROM invoice
+
 SELECT SUM(total) AS TotalAmount
 FROM invoice
-WHERE billingCountry = 'USA'
-  AND invoiceDate BETWEEN '2009-01-01' AND '2009-12-31';
+WHERE billing_country = 'USA'
+  AND invoice_date BETWEEN '2009-01-01' AND '2009-12-31';
 
 
 --Açıklama : Bu sorgu, invoice tablosundaki faturalardan 
---yalnızca fatura tarihi 2009 yılı içinde olan ve billingCountry sütunu 'USA' olan kayıtları filtreler. 
+--yalnızca fatura tarihi 2009 yılı içinde olan ve billing_ountry sütunu 'USA' olan kayıtları filtreler. 
 --Ardından bu kayıtların total değerlerinin toplamını hesaplar.
 
 ------------------------------------------------------------------------------------------------------
@@ -15839,16 +15841,15 @@ WHERE billingCountry = 'USA'
 -- playlisttrack
 -- playlist
 
-SELECT t.TrackId, t.Name AS TrackName, pt.PlaylistId, p.Name AS PlaylistName
+SELECT t.track_id, t.name AS track_name, pt.playlist_id, p.name AS playlist_name
 FROM track t
-JOIN playlisttrack pt ON t.TrackId = pt.TrackId
-JOIN playlist p ON pt.PlaylistId = p.PlaylistId;
+JOIN playlist_track pt ON t.track_id = pt.track_id
+JOIN playlist p ON pt.playlist_id = p.playlist_id;
 
 
-
---Açıklama : Bu sorgu, track, playlisttrack ve playlist tablolarını ilişkili sütunlar üzerinden birleştirir.
+--Açıklama : Bu sorgu, track, playlist_track ve playlist tablolarını ilişkili sütunlar üzerinden birleştirir.
 --Her parçanın (track) hangi çalma listesine (playlist) ait olduğunu göstermek için kullanılır. 
---playlisttrack, ara tablo olarak görev yapar.
+--playlist_track, ara tablo olarak görev yapar.
 
 ------------------------------------------------------------------------------------------------------
 --Soru 3: Track, Album ve Artist Tablolarında JOIN
@@ -15862,13 +15863,12 @@ JOIN playlist p ON pt.PlaylistId = p.PlaylistId;
 -- album
 -- artist
 
-SELECT t.TrackId, t.Name AS TrackName, t.Milliseconds, a.Title AS AlbumTitle, ar.Name AS ArtistName
+SELECT t.track_id, t.name AS track_name, t.milliseconds, a.title AS album_title, ar.name AS artist_name
 FROM track t
-JOIN album a ON t.AlbumId = a.AlbumId
-JOIN artist ar ON a.ArtistId = ar.ArtistId
-WHERE a.Title = 'Let There Be Rock'
-ORDER BY t.Milliseconds DESC;
-
+JOIN album a ON t.album_id = a.album_id
+JOIN artist ar ON a.artist_id = ar.artist_id
+WHERE a.title = 'Let There Be Rock'
+ORDER BY t.milliseconds DESC;
 
 --Açıklama :Bu sorgu, "Let There Be Rock" adlı albümdeki tüm parçaları (track) listeler ve 
 --her parçaya ait sanatçı (artist) bilgisini de gösterir.
