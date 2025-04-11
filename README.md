@@ -1,4 +1,3 @@
----
 # TurkStudentCo Data Science Bootcamp SQL (Şubat–Nisan 2025) 🧑‍💻
 
 ## 📚 Eğitmen:
