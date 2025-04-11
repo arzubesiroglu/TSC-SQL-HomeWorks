@@ -13,6 +13,14 @@
 2. **HomeWork2.sql** – İkinci ödev: Invoice tablosu üzerinde veri analizi ve sorgulama işlemleri. 
 3. **HomeWork3.sql** – Üçüncü ödev: Track, Playlist, Album ve Artist tablolarında JOIN, tarih filtreleme, toplama ve sıralama sorguları işlemleri.
 4. **FinalProject/** – Final Proje: PostgreSQL ile Çevrimiçi Eğitim Platformu için veritabanı şeması tasarımı.
+   - 📄 `FinalProject.sql` – Açıklamalı SQL tablo tanımları (PK/FK ilişkileriyle)
+   - 🖼️ `ERD.png` – Tablolar arası ilişkileri gösteren veritabanı diyagramı
+
+---
+
+## 🖼️ Final Proje ER Diyagramı
+
+![ER Diyagramı](FinalProject/ERD.png)
 
 ---
 
@@ -22,5 +30,9 @@
 ---
 
 ## 📝 Teşekkürler!
-Bu repository'yi ziyaret ettiğiniz için teşekkürler! 😊
+Bu repository'yi ziyaret ettiğiniz için teşekkürler! 😊  
+Beğendiyseniz ⭐ bırakmayı, 🍴 forklamayı ve paylaşmayı unutmayın!
+
+---
+
 
