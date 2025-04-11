@@ -32,7 +32,7 @@
 
 ## 📝 Teşekkürler!
 Bu repository'yi ziyaret ettiğiniz için teşekkürler! 😊  
-Beğendiyseniz ⭐ bırakmayı, 🍴 forklamayı ve paylaşmayı unutmayın!
+Beğendiyseniz ⭐ bırakmayı, 🔀 forklamayı ve 👥 paylaşmayı unutmayın!
 
 ---
 
