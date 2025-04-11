@@ -15,6 +15,7 @@
 4. **FinalProject/** – Final Proje: PostgreSQL ile Çevrimiçi Eğitim Platformu için veritabanı şeması tasarımı.
    - 📄 `FinalProject.sql` – Açıklamalı SQL tablo tanımları (PK/FK ilişkileriyle)
    - 🖼️ `ERD.png` – Tablolar arası ilişkileri gösteren veritabanı diyagramı
+   - 👉 Daha fazla bilgi için: [`FinalProject/README_placeholder.md`](FinalProject/README_placeholder.md)
 
 ---
 
