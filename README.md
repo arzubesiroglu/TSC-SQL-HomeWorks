@@ -34,6 +34,7 @@
 Bu repository'yi ziyaret ettiğiniz için teşekkürler! 😊  
 Beğendiyseniz ⭐ bırakmayı, 🔀 forklamayı ve 👥 paylaşmayı unutmayın!
 
+👉 İyi çalışmalar ve bol SQL'li günler! 🧑‍💻
 ---
 
 
